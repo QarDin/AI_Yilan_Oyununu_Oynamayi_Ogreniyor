@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("YilanAI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abb4b456ddee2a5da04b30c7c1f56b46c54a3f42")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2c17372dbfa3c6d1328c3a9f57624efcf204273")]
 [assembly: System.Reflection.AssemblyProductAttribute("YilanAI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("YilanAI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

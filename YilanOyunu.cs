@@ -28,6 +28,7 @@ public class YilanOyunu
     public Konum Yem { get; private set; }
     public int Skor { get; private set; }        // yenen yem sayısı
     public int AdimSayisi { get; private set; }  // kaç tick geçti
+    int AdimSayaci = 0;
     public bool Bitti { get; private set; }
 
     public YilanOyunu()
@@ -137,12 +138,20 @@ public class YilanOyunu
         if (Bitti) return;
 
         AdimSayisi++;
+        AdimSayaci++;
+        if (AdimSayaci == aclikSiniri)
+        {
+            // burada yilanin isi son bulacak.
+            Bitti = true;
+            return;
+        }
         var yeniBas = Bas + AdimVektoru(Yon);
         bool yiyor = yeniBas == Yem;
 
         if (Carpar(yeniBas, yiyor))
         {
             Bitti = true;
+
             return;
         }
 
@@ -151,6 +160,7 @@ public class YilanOyunu
         if (yiyor)
         {
             Skor++;
+            AdimSayaci = 0;
             YemKoy();
         }
         else
@@ -232,7 +242,10 @@ public class YilanOyunu
 
         return false;
     }
-
+    public float Puan()
+    {
+        return (float)(Skor * 40 + AdimSayisi * 0.1);
+    }
     void YemKoy()
     {
         var bosKareler = new List<Konum>();

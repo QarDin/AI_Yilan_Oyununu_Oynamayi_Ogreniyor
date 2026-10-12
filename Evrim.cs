@@ -64,7 +64,6 @@ public class Evrim
                     tutucu = kopya[j];
                     indexHolder = j;
                 }
-                // puanlar.Sort();
             }
             elitDizi[z] = indexHolder;
             kopya[indexHolder] = float.MinValue;

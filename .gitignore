@@ -1,0 +1,39 @@
+gitignore
+## Olası kullanıcı ayarları ve önbellekler
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Derleme Çıktıları (Build Artifacts)
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+ARM/
+ARM64/
+bld/
+bin/
+obj/
+
+## Klasör bazlı araç çıktıları ve loglar
+.vs/
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.binlog
+*.log
+
+## NuGet Paketleri
+*.nupkg
+*.snupkg
+packages/
+
+## İşletim Sistemi Kalıntıları
+.DS_Store
+Thumbs.db
